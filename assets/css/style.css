@@ -1,16 +1,213 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
+/*----------------------------------------------------- colours */
+.bg-color-name-title {
+    background-color: #676767;
+}
+
+.ui-menu-color-home {
+    background-color: #e67e22;
+}
+
+.ui-menu-color-resume {
+    background-color: #9b59b6;
+}
+
+.ui-menu-color-contact {
+    background-color: #3498db;
+}
+
+.ui-menu-color-download {
+    background-color: #525252;
+}
+
+/*----------------------------------------------------- special paddings/margins/text*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: o; /* this is to stop any alignment issues from bootstrap */
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+/* this is just to ensure good spacing */
+.inline-block {
+    display: inline-block;
+}
+
+/*----------------------------------------------------- heading */
+
 header {
     margin: 0;
 }
 
+.heading {
+    margin-left: 50px;
+}
+
 .logo {
-    background: url(../images/rosie.png);
-    background-position: center;  /* center of the col */
-    background-repeat: no-repeat; 
-    background-size: cover; /* cover the whole col */
-    min-height: 360px; /* for all viewports */
-    transition: all .5s ease-in-out; 
+    background: url(../images/Nathan\ pic.jpg);
+    background-position: center;
+    /* center of the col */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* cover the whole col */
+    min-height: 360px;
+    /* for all viewports */
+    transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+}
+
+.name {
+    font-family: "Exo", sans-serif;
+    font-weight: 100;
+    font-size: 46px;
+    margin-top: 50px;
+    color: #ffffff;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #ffffff;
+}
+
+/* selector taken from dev tools and overridden in own css */
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+/* this is a css hack to stop the white space caused by html whe displaying items inline 
+but this also makes our font size not visible - override this usin #nav li class*/
+.menucontainer {
+    font-size: 0;
+}
+
+/* this it to override the menucontainer font size and give 0 padding to take full control of the container */
+#nav li {
+    font-size: 14px;
+    padding: 0;
+}
+
+/* remove bootstraps margin to make our nav menu bottom in line with our logo image */
+#nav {
+    margin: 0;
+}
+
+.menuitem {
+    height: 120px;
+    /* 1/3 of our profile picture height for visual balance (rule of thirds)*/
+    text-align: center;
+    padding: 0;
+}
+
+.menuitem a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 120px;
+}
+
+/* this is to target the font awesome icone */
+.menuitem a i {
+    padding-top: 22px;
+    display: block;
+    /* vertical separation from text and icon */
+    color: #fafafa;
+    font-size: 26px;
+}
+
+.menuitem span {
+    display: block;
+    width: 100%;
+    padding-top: 5px;
+    /* to push it down a litle bit romour icons */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+
+/*----------------------------------------------------- hover.css */
+/* changed the before and afterr transition colours to fit our design using dev tool as 
+well as set the height to 120px to match and stay inline with our navbar and logo image */
+.hvr-shutter-out-vertical {
+    background: rgba(0, 0, 0, 0);
+    height: 120px;
+}
+
+.hvr-shutter-out-vertical:before {
+    background: rgba(0, 0, 0, 0.2);
+    height: 120px;
+}
+
+/*----------------------------------------------------- footer */
+
+footer {
+    background-color: #525252;
+    color: #fafafa;
+    min-height: 120px;
+    margin: 0;
+}
+
+.cv-pdf i {
+    font-size: 18px;
+    color: #fafafa;
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out; /* always put the transition in the parent el;ement so it works when mouse hovers and leaves */
+    -moz-transition: all 0.35s ease-in-out; /* mozilla */
+    -webkit-transition: all 0.35s ease-in-out; /* webkit browsers */
+    -o-transition: all 0.35s ease-in-out; /* opera */
+}
+
+.cv-pdf i:hover {
+    color: #e84610;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+/* font awesome icons */
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background-color: #8f8f8f;
+    transition: all 0.35s ease-in-out; 
+    -moz-transition: all 0.35s ease-in-out; 
+    -webkit-transition: all 0.35s ease-in-out; 
+    -o-transition: all 0.35s ease-in-out; 
+}
+
+.social-links li a i:hover {
+    background-color: #e84610;
+}
+
+/* padding so footer heading are not hugging the headr/content */
+#footer-details {
+    padding: 20px;
 }
