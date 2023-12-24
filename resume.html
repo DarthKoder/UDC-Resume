@@ -35,17 +35,17 @@
                             <!-- bootstraps class to display list horizontally-->
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
                                 <!-- this make it 4 cols wide when viewed on anything larger than a small screen but only 2 cols wide when viewed on a mobile format. lists inline horizontally -->
-                                <a href="#" class="hvr-shutter-out-vertical"><i class="fa fa-home"
+                                <a href="index.html" class="hvr-shutter-out-vertical"><i class="fa fa-home"
                                         aria-hidden="true"></i> <span>Home</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
                                 <!-- this make it 4 cols wide when viewed on anything larger than a small screen but only 2 cols wide when viewed on a mobile format. lists inline horizontally -->
-                                <a href="#" class="hvr-shutter-out-vertical"><i class="fa fa-graduation-cap"
+                                <a href="resume.html" class="hvr-shutter-out-vertical"><i class="fa fa-graduation-cap"
                                         aria-hidden="true"></i> <span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
                                 <!-- this make it 4 cols wide when viewed on anything larger than a small screen but only 2 cols wide when viewed on a mobile format. lists inline horizontally -->
-                                <a href="#" class="hvr-shutter-out-vertical"><i class="fa fa-comment-o"
+                                <a href="contact.html" class="hvr-shutter-out-vertical"><i class="fa fa-comment-o"
                                         aria-hidden="true"></i> <span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
@@ -62,10 +62,160 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="container-fluid">
+        <div class="row">
+            <!-- Copied and pasted index html content and deleted unwanted item/sections. 
+                Changed headings and icons so we can keep the layout -->
+            <div class="col-md-4 bg-color-work-history section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="history-heading uppercase">
+                            Work History
+                        </h3>
+                    </div>
+                </div>
+                <!--  we us the history-items class to group our work history together for a final bit of styling/postioning -->
+                <div class="history-items">
+                    <!--  this is a custom attribute we are making for the dates similar to bootstraps data toggle and data target 
+                Now, it's very important when you're creating custom attributes to use the data-prefix then your own custom attribute.
+                It makes your code easier to read for other developers and also differentiates your attribute from default built-in HTML5 attributes. -->
+                    <div class="timeline-item" data-dates="05/2013 - 11/2014">
+                        <h4>Martells / Crawley College</h4>
+                        <p>Removal Man / Level 3 Electrical Installation</p>
+                    </div>
+                    <div class="timeline-item" data-dates="11/2014 - 11/2015">
+                        <h4>iWireless Solutions</h4>
+                        <p>Electrical Installation Technician</p>
+                    </div>
+                    <div class="timeline-item" data-dates="12/2015 - 12/2016">
+                        <h4>AllenBuild</h4>
+                        <p>Electrical Fitter</p>
+                    </div>
+                    <div class="timeline-item" data-dates="01/2017 - 10/2019 - Promotion">
+                        <h4>CBRE @ Virgin Atlantic</h4>
+                        <p>Extra Work Electrician</p>
+                    </div>
+                    <div class="timeline-item" data-dates="10/2019 - 09/2021">
+                        <h4>CBRE @ Virgin Atlantic</h4>
+                        <p>Electrical Shift Engineer</p>
+                    </div>
+                    <div class="timeline-item" data-dates="01/2022 - 05/2022">
+                        <h4>Engie @ Amazon</h4>
+                        <p>Facilities Engineer - Electrical</p>
+                    </div>
+                    <div class="timeline-item" data-dates="06/2022 - 10/2023">
+                        <h4>Mitie @ Thales</h4>
+                        <p>Electrical Engineer</p>
+                    </div>
+                    <div class="timeline-item" data-dates="10/2023 - Present">
+                        <h4>CBRE @ AtkinsRealis / Newcastle College University</h4>
+                        <p>Mobile Engineer / Level 5 Web Application Development</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">My Skills</h3>
+                    </div>
+                </div>
+                <!--  add a new row underneath.
+                Then, of course, this being Bootstrap, I have to add another column as well.
+                To create a progress bar, then, we use a progress class.
+                This is a default built-in class provided by Bootstrap that acts as a wrapper for a progress bar and its content.
+                The actual bar itself is created using the progress-bar class. -->
+                <div class="row">
+                    <!-- When looked at on the mobile, this is going to be 10 columns wide with an offset of 1 so that we get the content centered and 
+                    have a one column margin down the left side -->
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-tv" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Front End</h4>
+                                <p>I specialize in User Experience Design using the trinity of HTML/CSS/JavaScript. I
+                                    also have experience in Front End Frameworks like Bootstrap.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-gears" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Back End</h4>
+                                <p>I am familliar with data-driven web applications. Many of my projects utilise
+                                    document-based data.
+                                    I use Python and Django in conjunction with MongoDB to process abd present
+                                    information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row progress-section">
+                    <div class="col">
+                        <div class="progress">
+                            <!-- we need to say role="progressbar".
+                            Then we want to set some aria attributes as well.
+                            The aria-valuenow attribute represents the current value of the progress bar.
+                            So we're setting this one to 90.
+                            Then we need to create a range.
+                            So aria-valuemin is set to 0.
+                            aria-valuemax is set to 100, which gives it a 0 to 100 range.
+                            The next thing that we're going to do is some inline styling.
+                            This is necessary for progress bars to actually give us the width.
+                            This is how Bootstrap has chosen to implement it. -->
+                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100" style="width:90%;">
+                                <!-- Inside the <div>, then, I'm going to create another <span> and give that the class of sr-only, which we came across before.
+                                So this is for screen readers only.
+                                When a screen reader encounters this progress bar, which otherwise it would make no sense of, it will read 90% complete.
+                                Then, under that <div>, we're going to add in another <span> with the class of progress-type.
+                                This will be a textual description of what the progress bar is communicating to us. -->
+                                <span class="sr-only">90% complete</span>
+                            </div>
+                            <!-- is saying that she's 90% proficient in HTML and HMTL5, 
+                                 90% relative to the other skill sets we'll display. -->
+                            <span class="progress-type">HTML / HTML5</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100" style="width:80%;">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">CSS / CSS3</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100" style="width:70%;">
+                                <span class="sr-only">70% complete</span>
+                            </div>
+                            <span class="progress-type">JavaScript / jQuery</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100" style="width:80%;">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">Django / Python</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100" style="width:80%;">
+                                <span class="sr-only">80% complete</span>
+                            </div>
+                            <span class="progress-type">SQL / NoSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
-    <!-- fluid container to make sure it stretches acroos the full width of our page and using the rule of thirds, created our columns -->
+
     <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-sm-4">
@@ -80,50 +230,48 @@
                 <p class="inline-block">
                     Would you like a copy of my CV? Download it here
                     <a href="#" target="_blank" class="cv-pdf">
-                        <i class="fa fa-download" aria-hidden="true"></i> <!-- hidden top screen readers -->
+                        <i class="fa fa-download" aria-hidden="true"></i>
                         <span class="sr-only">Download link</span>
-                        <!-- for screen reader only and will not be displayed on screen -->
                     </a>
                 </p>
             </div>
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Social</h5>
                 <ul class="list-inline social-links">
-                    <!-- list-inline is bootstraps class and every li will need list-inline-item -->
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-pinterest" aria-hidden="true"></i>
-                        <span class="sr-only">Pinterest</span>
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">LinkedIn</span>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
                         </a>
                     </li>
                 </ul>

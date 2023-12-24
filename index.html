@@ -35,17 +35,17 @@
                             <!-- bootstraps class to display list horizontally-->
                             <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item menuitem">
                                 <!-- this make it 4 cols wide when viewed on anything larger than a small screen but only 2 cols wide when viewed on a mobile format. lists inline horizontally -->
-                                <a href="#" class="hvr-shutter-out-vertical"><i class="fa fa-home"
+                                <a href="index.html" class="hvr-shutter-out-vertical"><i class="fa fa-home"
                                         aria-hidden="true"></i> <span>Home</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item menuitem">
                                 <!-- this make it 4 cols wide when viewed on anything larger than a small screen but only 2 cols wide when viewed on a mobile format. lists inline horizontally -->
-                                <a href="#" class="hvr-shutter-out-vertical"><i class="fa fa-graduation-cap"
+                                <a href="resume.html" class="hvr-shutter-out-vertical"><i class="fa fa-graduation-cap"
                                         aria-hidden="true"></i> <span>Resume</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item menuitem">
                                 <!-- this make it 4 cols wide when viewed on anything larger than a small screen but only 2 cols wide when viewed on a mobile format. lists inline horizontally -->
-                                <a href="#" class="hvr-shutter-out-vertical"><i class="fa fa-comment-o"
+                                <a href="contact.html" class="hvr-shutter-out-vertical"><i class="fa fa-comment-o"
                                         aria-hidden="true"></i> <span>Contact</span></a>
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
@@ -62,7 +62,141 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="container-fluid">
+        <div class="row">
+            <!-- <div class="row row-table"> taken this out to prevent positioning issues-->
+            <!-- col-md-8 as we have to have columns as child of row class, this will be for medium and above. Section-column will specify 
+                that this column is a table The row-table class specifies the use of a table whereas section-column specifies the use of a 
+                table cell, which will give us evenly sized columns in terms of height. -->
+            <!--In our previous videos, we've put our three reasons in place, which, as we can see, takes
+                up two-thirds of our section width.
+                In this video, we want to add our personal info items to the final third, which will
+                be on the left.
+                So let's start that now.
+                You'll notice that I've compressed down our three reasons section here using this handy
+                feature, the little down arrow icon in the margin.
+                That just makes it a little bit easier to see what's going on with our code.
+                I'm also going to remove the row-table class because that causes some issues with positioning.
+                We're going to use a very similar column structure to the one that we've used in our profile
+                photo and navigation section.
+                So I'm going to add a col-md-4 above our three reasons.
+                We're doing this because, by default, elements are rendered in the order that they appear
+                in HTML.
+                So they either appear above, or they'll appear to the left and try and push any block level
+                elements below that. -->
+            <div class="col-md-4 bg-color-personal-info section-column">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="section-heading uppercase">
+                            Personal Info
+                        </h3>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Name:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Nathan Fisher
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                           GitHub:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            Darth Koder
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Phone:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            01234 567890
+                        </p>
+                    </div>
+                </div>
+                <div class="personal-info-item">
+                    <div class="key">
+                        <p class="uppercase">
+                            Email:
+                        </p>
+                    </div>
+                    <div class="value">
+                        <p>
+                            N.Fisher21@outlook.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 bg-color-three-reasons section-column">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="section-heading uppercase">About Me</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- When looked at on the mobile, this is going to be 10 columns wide with an offset of 1 so that we get the content centered and 
+                    have a one column margin down the left side.We're going to switch that offset off for tablets and larger because on the tablet, 
+                    we want it to appear in three columns of content. On a desktop, we want it to appear in two columns. -->
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-question" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">What do I do?</h4>
+                                <p>I'm a Full Stack Developer keen to grow and make my mark in the developing world.
+                                    After Studying with Code Institue at Newcastle College University, I am looking to
+                                    build upon my knowledge and qualification and bring life to all future projects. </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-thumbs-up" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">How do I do it?</h4>
+                                <p>I do my research, I follow form and function and I know that attractive aesthetics
+                                    along with great functionality, security and reliability, all come together 
+                                    to create amazing user experience.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                        <div class="row">
+                            <div class="col-2">
+                                <i class="three-reasons-icon fa fa-bolt" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-10">
+                                <h4 class="three-reasons-heading uppercase">Why hire me?</h4>
+                                <p>I take the utmost pride in producing the the highest quality work, making sure that
+                                    you have your own pesonal touch
+                                    to stand out from the rest. I am an excellent communicator and together we will
+                                    build ther perfect product for you. </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
     <!-- fluid container to make sure it stretches acroos the full width of our page and using the rule of thirds, created our columns -->
@@ -71,7 +205,7 @@
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">About</h5>
                 <p class="inline-block">
-                    Junior Full Stack Web Developer. Keen to learn and build upon my skills & knowledge.
+                    Full Stack Web Developer. Keen to learn and build upon my skills & knowledge.
                     Studied with Code Institue at Newcastle College University.
                 </p>
             </div>
@@ -92,38 +226,38 @@
                     <!-- list-inline is bootstraps class and every li will need list-inline-item -->
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-pinterest" aria-hidden="true"></i>
-                        <span class="sr-only">Pinterest</span>
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">LinkedIn</span>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
                         </a>
                     </li>
                 </ul>
