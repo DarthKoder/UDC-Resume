@@ -17,6 +17,10 @@
     background-color: #9b59b6;
 }
 
+.bg-color-contact {
+    background-color: #fff;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -397,4 +401,45 @@ the square. */
 
 .history-items {
     margin-bottom: 30px;
+}
+
+/*----------------------------------------------------- Contact form */
+/* We want to ensure that it's a maximum of 70% of the width of the page because we don't
+want it to take up the entire width. our font family, as usual, is going to be Exo with a fall back of San Serif.
+The font-weight will be 300, which is a little bit lighter than default. We also want to give some breathing space 
+between the elements above it.We'll create what's called negative space. You can target a button element with a particular 
+attribute. In this case, the attribute of type="submit".*/
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #3498db;
+}
+
+/*----------------------------------------------------- Media query */
+/* Our media query is only going to take effect when the width of the screen is 992px or greater.
+So I'm going to set @media(min-width) to 992px. So when our screen size is wider than 992px - for desktop. 
+Then I'm going to just take my center-form class. increase the top padding.
+We're also going to set a minimum height for this section so that it occupies some nice
+vertical space on the screen. Set the max-width to just 50%.*/
+@media(min-width: 992px) {
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -50,8 +50,9 @@
                             </li>
                             <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item menuitem">
                                 <!-- this make it 4 cols wide when viewed on anything larger than a small screen but only 2 cols wide when viewed on a mobile format. lists inline horizontally -->
-                                <a href="#" class="hvr-shutter-out-vertical"><i class="fa fa-download"
-                                        aria-hidden="true"></i> <span>Download</span></a>
+                                <a href="assets/cv/Nathan-Fisher CV.pdf" target="_blank"
+                                    class="hvr-shutter-out-vertical"><i class="fa fa-download" aria-hidden="true"></i>
+                                    <span>Download</span></a>
                             </li>
                         </ul>
 
@@ -62,8 +63,33 @@
             </div>
         </div>
     </header>
-    <section>
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="contact-heading uppercase text-center">Got a project in mind?</h3>
+                <h5 class="uppercase text-center">Let's work together!</h5>
 
+                <div class="center-form">
+                    <form>
+                        <!-- Here, I'm just setting the different attributes, giving it a name and ID.
+                        The class of form-control is required. This is a Bootstrap class, which adds styling to this form.
+                        Then we'll add some placeholder text as well. -->
+                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
+                            required />
+                        <!-- This will be to allow us to put in a brief description of the project that the user wants us to do.
+                        So that's going to have five rows. The other attributes are pretty much the same. We'll just change the actual data here. -->
+                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
+                            placeholder="project description" required></textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- fluid container to make sure it stretches acroos the full width of our page and using the rule of thirds, created our columns -->
     <footer class="container-fluid">
@@ -79,7 +105,7 @@
                 <h5 class="uppercase general-sub">Download</h5>
                 <p class="inline-block">
                     Would you like a copy of my CV? Download it here
-                    <a href="#" target="_blank" class="cv-pdf">
+                    <a href="assets/cv/Nathan-Fisher CV.pdf" target="_blank" class="cv-pdf">
                         <i class="fa fa-download" aria-hidden="true"></i> <!-- hidden top screen readers -->
                         <span class="sr-only">Download link</span>
                         <!-- for screen reader only and will not be displayed on screen -->
@@ -92,38 +118,38 @@
                     <!-- list-inline is bootstraps class and every li will need list-inline-item -->
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-pinterest" aria-hidden="true"></i>
-                        <span class="sr-only">Pinterest</span>
+                            <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            <span class="sr-only">Pinterest</span>
                         </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="#">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">LinkedIn</span>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
                         </a>
                     </li>
                 </ul>
